@@ -79,7 +79,7 @@ const keywords = {
   "whoami": {
     "a": function (callback) {
       let whoami = keywords.getpmv.a(["whoami"], true)
-      whoami = whoami || "erucix"
+      whoami = whoami || "prajwal"
       if (callback) return whoami
       printLn(whoami)
     },
