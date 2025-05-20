@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "jet";
+  src: url('./jb.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: jet;
+  color: white;
+  font-size: 1em;
+}
+
+body {
+  background-color: rgb(29, 28, 28);
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden auto;
+}
+
+.activeBodyContainer {
+  width: 100%;
+  cursor: text;
+  padding: .5em .3em 0 0;
+  margin-bottom: 10px;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  justify-content: space-between;
+}
+
+.inputContainer .euid {
+  margin: 0 .3em;
+  color: greenyellow;
+}
+
+.preDisplayText {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.bracket {
+  color: deepskyblue;
+  font-weight: bold;
+}
+
+.preDisplayText .deviceName {
+  font-weight: bold;
+  color: tomato;
+}
+
+.preDisplayText .centralUnicode,
+.nextCentralUnicode {
+  color: greenyellow;
+  font-weight: bold;
+  padding: 0 .2em 0 .2em;
+  content: "#";
+}
+
+.preDisplayText .nextCentralUnicode {
+  transform: rotate(-90deg);
+}
+
+.preDisplayText .userName {
+  font-weight: bold;
+  color: tomato;
+}
+
+.keywordInputBox_over {
+  display: flex;
+  position: relative;
+  color: transparent;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  color: transparent;
+  background-color: transparent;
+  text-decoration: none !important;
+  caret-color: white;
+  user-select: none;
+  caret-shape: block;
+}
+
+.keywordInputBox_under {
+  padding-left: 58px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+p {
+  color: deepskyblue;
+  font-weight: bold;
+}
+
+.red {
+  color: tomato;
+}
+
+.nabla {
+  display: inline-block;
+  transform: rotate(-90deg);
+  color: skyblue;
+}
